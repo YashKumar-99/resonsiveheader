@@ -1,0 +1,192 @@
+/* Logo animation */
+.logo {
+    animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+/* Logo animation */
+
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+.Container {
+    display: flex;
+    background: linear-gradient(45deg, black, transparent);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 15px 15px 17px -15px #111;
+}
+
+.logo img {
+    height: 81px;
+    width: 100px;
+}
+
+.NavContainer {
+    display: flex;
+    align-items: center;
+}
+
+
+.singleIcon {
+    color: #fff;
+    padding: 7px;
+    background: #000000;
+}
+
+.NavContainer a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.NavContainer ul {
+    padding: 10px;
+    color: #000000;
+}
+
+.toggleMenu {
+    display: none;
+}
+
+
+
+.NavContainer ul {
+    list-style: none;
+}
+
+/* .page-container {
+   
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+} */
+
+.page-container:nth-child(even) {
+    background: black !important;
+}
+
+.mobileNavbar {
+    display: none;
+}
+
+.footer h4 {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 20px 10px;
+    margin: 0px;
+    color: #fff;
+}
+
+.footer {
+    background: #9ba5a5;
+}
+
+.toggleMenu button:hover {
+    cursor: pointer;
+}
+
+.toggleMenu button {
+    background: #61dafb;
+    border: none;
+    width: 35px;
+    height: 30px;
+    color: #fff;
+}
+
+@media (max-width:768px) {
+
+    .mobileNavbar {
+        display: block;
+        text-align: center;
+        background: lightgrey;
+        padding: 10px;
+        right: 0;
+    }
+
+    .toggleMenu {
+        display: block;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .NavContainer {
+
+        display: none;
+    }
+
+
+    .mobileNavbar ul {
+        padding: 10px;
+        margin: 0px;
+    }
+
+
+    .mobileNavbar ul a {
+        color: #000000;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .iconMobile {
+        margin: 25px 0px;
+    }
+
+    .Container {
+        height: 60px;
+    }
+
+
+}
+
+@media (max-width:576px) {
+
+
+    .page-container {
+        height: 100%;
+        display: block;
+        width: 100%;
+
+    }
+
+
+}
+
+
+.addclass {
+    opacity: 1;
+    transition: all .6s;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.removeclass {
+    opacity: 0;
+    transition: all .6s;
+    height: 0;
+    display: none;
+
+
+}
+
+.mobileNavbar ul {
+    list-style: none;
+}
